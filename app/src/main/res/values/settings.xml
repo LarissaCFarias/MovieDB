@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_key">d8e411b0c0192a45608596e77a6ca4cb</string>
+    <string name="web_service_url">http://api.openweathermap.org/data/2.5/forecast?q=%s&amp;APPID=%s&amp;units=metric</string>
+    <string name="img_download_url">https://image.tmdb.org/t/p/%s/%s.jpg</string>
+</resources>

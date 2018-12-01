@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <!--<LinearLayout android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<fragment-->
+                <!--android:id="@+id/fragment_backdrop"-->
+                <!--android:name="DetailFragment.BackdropFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="500dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginLeft="@dimen/grid_col_width"-->
+                <!--android:layout_marginTop="@dimen/grid_col_width"-->
+
+                <!--<fragment-->
+                    <!--android:id="@+id/fragment_poster"-->
+                    <!--android:name="DetailFragment.PosterFragment"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:layout_weight="1"/>-->
+
+                <!--<fragment-->
+                    <!--android:id="@+id/fragment_rating"-->
+                    <!--android:name="DetailFragment.PopularityFragment"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_weight="1"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<fragment-->
+                <!--android:id="@+id/overview_fragment"-->
+                <!--android:name="DetailFragment.OverviewFragment"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:layout_marginBottom="@dimen/grid_col_width"-->
+                <!--android:layout_weight="1"/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+</android.support.constraint.ConstraintLayout>

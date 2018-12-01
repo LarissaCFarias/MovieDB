@@ -1,5 +1,6 @@
 package br.com.bossini.movieproject;
 
+import android.content.Intent;
 import android.graphics.Movie;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -10,11 +11,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
+import DetailFragment.BackdropFragment;
 import utilities.NetworkUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,14 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
         new FetchMovies().execute(); //New code
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -91,5 +86,24 @@ public class MainActivity extends AppCompatActivity {
             return null;
 
         }
+
+        public class MovieDetailActivity extends AppCompatActivity {
+
+            private final String TAG = MovieDetailActivity.class.getSimpleName();
+
+            public static final String BASE_URL ="https://image.tmdb.org/t/p/w185";
+
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_movie_detail);
+                Intent intent = getIntent();
+                Movie mov_intent = (Movie)        intent.getSerializableExtra("detail");
+            }
+
+        }
     }
+
+
+
 }
